@@ -28,26 +28,19 @@ function Language:get_target()
 	end
 
 	local mode = self:get_opt("mode")
-	local test_prefix = self:get_opt("test_prefix") or ""
-	local test_suffix = self:get_opt("test_suffix") or ""
+	local test = self:get_opt("test") or ""
 
 	if mode == "prefix" then
-		if basename:sub(1, #test_prefix) == test_prefix then
-			return basename:sub(#test_prefix + 1) .. ext
+		if basename:sub(1, #test) == test then
+			return basename:sub(#test + 1) .. ext
 		else
-			return test_prefix .. basename .. ext
+			return test .. basename .. ext
 		end
 	elseif mode == "suffix" then
-		if basename:sub(- #test_suffix) == test_suffix then
-			return basename:sub(1, #basename - #test_suffix) .. ext
+		if basename:sub(- #test) == test then
+			return basename:sub(1, #basename - #test) .. ext
 		else
-			return basename .. test_suffix .. ext
-		end
-	elseif mode == "dot_suffix" then
-		if basename:sub(- #test_suffix) == test_suffix then
-			return basename:sub(1, #basename - #test_suffix) .. ext
-		else
-			return basename .. test_suffix .. ext
+			return basename .. test .. ext
 		end
 	else
 		error("Unknown mode: " .. tostring(mode))

@@ -1,1 +1,1 @@
-return { mode = "prefix", test_suffix = "test_", ext = ".py" }
+return { mode = "prefix", test = "test_", ext = ".py" }

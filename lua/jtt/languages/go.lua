@@ -1,1 +1,1 @@
-return { mode = "suffix", test_suffix = "_test", ext = ".go" }
+return { mode = "suffix", test = "_test", ext = ".go" }

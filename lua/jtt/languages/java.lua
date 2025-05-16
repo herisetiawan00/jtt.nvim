@@ -1,1 +1,1 @@
-return { mode = "suffix", test_suffix = "Test", ext = ".java" }
+return { mode = "suffix", test = "Test", ext = ".java" }

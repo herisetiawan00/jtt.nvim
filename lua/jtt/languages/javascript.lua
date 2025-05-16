@@ -1,1 +1,1 @@
-return { mode = "dot_suffix", test_suffix = ".spec", ext = ".js" }
+return { mode = "suffix", test = ".spec", ext = ".js" }
