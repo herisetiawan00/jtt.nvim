@@ -12,6 +12,9 @@ Have a problem or idea? Make an [issue](https://github.com/herisetiawan00/jtt.nv
 1. [Features](#features)
 2. [Requirements](#requirements)
 3. [Installation](#installation)
+4. [Configurations](#configurations)
+5. [Options](#options)
+6. [Usage](#usage) 
 
 ## Features
 
