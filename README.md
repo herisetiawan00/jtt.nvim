@@ -46,9 +46,9 @@ Examples:
 ```lua
   require("jtt").setup({
     languages = {
-      dart = { mode = "suffix", test_suffix = "_test", ext = ".dart" },
-      python = { mode = "prefix", test_prefix = "test_", ext = ".py" },
-      typescript = { mode = "dot_suffix", test_suffix = ".spec", ext = ".ts" },
+      dart = { mode = "suffix", test = "_test", ext = ".dart" },
+      python = { mode = "prefix", test = "test_", ext = ".py" },
+      typescript = { mode = "suffix", test = ".spec", ext = ".ts" },
     }
   })
 ```
