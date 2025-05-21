@@ -40,7 +40,9 @@ function M.jump_to_test()
 		return
 	end
 
-	local result = vim.fn.system("fd --full-path " .. target_file)
+	local search_path = handler:get_path()
+
+	local result = vim.fn.system("fd -g " .. target_file .. " " .. search_path)
 	local path = trim(result:match("([^\n]*)"))
 
 	if path ~= "" then
