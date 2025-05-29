@@ -1,5 +1,6 @@
 return {
 	dart = require("jtt.languages.dart"),
+	elixir = require("jtt.languages.elixir"),
 	go = require("jtt.languages.go"),
 	java = require("jtt.languages.java"),
 	javascript = require("jtt.languages.javascript"),
