@@ -33,7 +33,7 @@ Use your favorite plugin manager :)
 
 ```lua
 {
-  "yourusername/jtt.nvim",
+  "herisetiawan00/jtt.nvim",
   config = function()
     require("jtt").setup()
   end
